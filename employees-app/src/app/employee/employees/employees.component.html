@@ -1,4 +1,5 @@
-<mat-nav-list class="employees-list">
+
+<mat-nav-list class="employees-list" *ngIf="employees.length">
   <app-employee-list-item
     [employee]="emp"
     *ngFor="let emp of employees"

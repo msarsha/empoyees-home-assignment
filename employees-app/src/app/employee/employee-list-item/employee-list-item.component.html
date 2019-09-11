@@ -1,6 +1,6 @@
-<mat-list-item (click)="navigateToEdit()">
+<mat-list-item>
   <img matListAvatar src="https://i.pravatar.cc/100">
-  <h3 matLine> {{employee.firstName}} {{employee.lastName}}</h3>
+  <h3 matLine (click)="navigateToEdit()"> {{employee.firstName}} {{employee.lastName}}</h3>
   <div class="right-actions">
     <button mat-icon-button (click)="remove.emit(employee)">
       <mat-icon color="warn">delete</mat-icon>
