@@ -1,0 +1,9 @@
+<form (ngSubmit)="saveEmployee()" [formGroup]="empForm">
+  <mat-form-field>
+    <input matInput placeholder="First Name" formControlName="firstName">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput placeholder="Last Name" formControlName="lastName">
+  </mat-form-field>
+  <button mat-button color="primary" [disabled]="empForm.invalid">Save</button>
+</form>

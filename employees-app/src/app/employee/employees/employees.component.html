@@ -1,0 +1,8 @@
+<mat-nav-list class="employees-list">
+  <app-employee-list-item
+    [employee]="emp"
+    *ngFor="let emp of employees"
+    (remove)="onRemove($event)"
+  >
+  </app-employee-list-item>
+</mat-nav-list>
