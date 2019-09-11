@@ -1,5 +1,4 @@
-
-<mat-nav-list class="employees-list" *ngIf="employees.length">
+<mat-nav-list class="employees-list" *ngIf="employees.length; else noEmployees">
   <app-employee-list-item
     [employee]="emp"
     *ngFor="let emp of employees"
@@ -7,3 +6,9 @@
   >
   </app-employee-list-item>
 </mat-nav-list>
+
+<ng-template #noEmployees>
+  <h4>
+    No employees. Crate one by clicking the button in the toolbar
+  </h4>
+</ng-template>
