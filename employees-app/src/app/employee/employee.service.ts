@@ -76,6 +76,6 @@ export class EmployeeService {
   }
 
   private handleError() {
-    this.snackBar.open('Something went wrong');
+    this.snackBar.open('Something went wrong', 'Close');
   }
 }
