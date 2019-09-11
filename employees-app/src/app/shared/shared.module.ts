@@ -1,6 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {MatButtonModule, MatFormFieldModule, MatIconModule, MatInputModule, MatListModule} from '@angular/material';
+import {
+  MatButtonModule,
+  MatFormFieldModule,
+  MatIconModule,
+  MatInputModule,
+  MatListModule,
+  MatSnackBarModule
+} from '@angular/material';
 import {HttpClientModule} from '@angular/common/http';
 
 
@@ -14,6 +21,7 @@ import {HttpClientModule} from '@angular/common/http';
     MatButtonModule,
     MatFormFieldModule,
     MatInputModule,
+    MatSnackBarModule,
     HttpClientModule
   ],
   exports: [
@@ -23,6 +31,7 @@ import {HttpClientModule} from '@angular/common/http';
     MatButtonModule,
     MatFormFieldModule,
     MatInputModule,
+    MatSnackBarModule,
     HttpClientModule
   ]
 })
